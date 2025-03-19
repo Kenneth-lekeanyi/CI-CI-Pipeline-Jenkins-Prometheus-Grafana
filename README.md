@@ -11,10 +11,10 @@ Now, go to the console and click on **launch instances**
 - instance type: **t2.medium** {At least t.2 median because the application in this server will use more compute power and also consume more memory}
 - Keypair: `select a keypair that you have access to it`
 - network settings: Click beside on `Edit` because we want to edit and add the SG
-Under "inbound" security group rul
+Under "inbound" security group rule
   - Click on **Add security group rule**
-  - **Type**        **Protocol**        **Port range**        **source type**
-  - custom TCP          TCP                 8080                 Anywhere
+  - **Type**        - **Protocol**        - **Port range**        - **source type**
+  - custom TCP          - TCP                 - 8080                 - Anywhere
     
 Scroll down and click on **advanced details**
 under the box of user data,
