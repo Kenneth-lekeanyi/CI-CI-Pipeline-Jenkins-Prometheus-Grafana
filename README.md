@@ -299,6 +299,8 @@ Repository URL: Past the git Repo URL of the App repo here. The git repo of this
 - So it appears like this: link to this Jenkinsfile script is [here](https://github.com/cvamsikrishna11/Jenkins-CI-CD-Pipeline-Project.git)
 - use this manuscript
 - ![Image](https://github.com/user-attachments/assets/2633079a-d982-4edb-bc8c-20fa1b18ec85)
+- ![Image](https://github.com/user-attachments/assets/2c624541-407f-4f25-88ed-e0d39d37ab67)
+- ![Image](https://github.com/user-attachments/assets/d011e394-a2e9-40cb-b906-87439839016c)
 - to build the pipeline
 
 set upSonarQube
