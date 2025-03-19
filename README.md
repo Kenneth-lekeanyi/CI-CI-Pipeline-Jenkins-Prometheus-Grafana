@@ -18,7 +18,7 @@ Under "inbound" security group rul
     
 Scroll down and click on **advanced details**
 under the box of user data,
--	Go to the repo [here](github.com/awandubandi/eagles-batch-devops-projects)
+-	Go to the repo [here](https://github.com/awanmbandi/eagles-batch-devops-projects.git)
 -	Switch to the `maves-nexus-sonarube-jenkins-install` branch
 -	Inside this branch click on **Jenkins-install.sh**
 -	Use the clipboard beside to copy the block of script as a whole form line 1-17.
