@@ -303,8 +303,9 @@ Repository URL: Past the git Repo URL of the App repo here. The git repo of this
 - ![Image](https://github.com/user-attachments/assets/d011e394-a2e9-40cb-b906-87439839016c)
 - to build the pipeline
 
-set upSonarQube
-to set up sonarqube, access the EC2 console then click on “launch instance”
+# (D) Set Up SonarQube
+-
+- To set up sonarqube, access the EC2 console then click on “launch instance”
 Name: sonarqube-server
 O.S Ami:ubuutu
 Version ubuutu 22.04 LTS
