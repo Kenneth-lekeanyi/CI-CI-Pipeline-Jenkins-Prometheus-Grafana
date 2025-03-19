@@ -262,25 +262,39 @@ Now the infrastructure pipeline is complete and successful. But we Need to see t
 - Lets first of all setup the Codebase.
 -	Get this Repo into your local and to your Remote. This is the Java application project that we are using. (for windows, change the terminal to bash) For macOs, it is o.k. No need to change anything. The Repository is [here](https://github.com/Kenneth-lekeanyi/CI-CI-Pipeline-Jenkins-Prometheus-Grafana.git)
 -	
--	Clone the repository to your local and 
--	Push it to your company Remote Repo 
+-	Clone the repository to your local and Push it to your company Remote Repo 
 -	Now go to the Jenkins UI. 
-*lets now create a new pipeline (purposely for this level Application deployment)
+- lets now create a new pipeline (purposely for this Java Application deployment)
 So,
 -	Click on “New item”
-Name:Airbnb-app-deployment-pipeline
-(so one pipeline is for infra deployment, while another pipeline is for application deployment. All of them are Hosted within one unique Jenkins server.)
+- Name:**Airbnb-app-deployment-pipeline**
+- (so one pipeline is for infra deployment, while another pipeline is for Application deployment. All of them are Hosted within one unique Jenkins server.)
 -	Click to select pipeline
 -	Click on OK
--	Now scroll down under “General” to locate pipeline
-If your pipeline script is in a file like Jenkins file in cuthub, under “Definition” Jenkins
--	Use the drop down to select “pipeline script from SCM
--	SCM: git
--	Repository URL: Paste the git reposition of that Repo here
--	Branch: https://github.com/cvomsikristinaii/jenkins-ci-CD-PIPELINE-PROJECT.GET
--	Script path: Jenkinsfiles
--	Click or save: then click now on build now to test.
-o	Script: under “try sample pipeline” use the drop down to select for “Hello world” see the sample script
+-	Now scroll down under “**General**” to locate "Pipeline"
+-	
+- ***{If your pipeline script is in a file like Jenkins file in Github, under “Definition” Jenkins
+-	Use the drop down to select “pipeline script from SCM"
+  - SCM: **git**
+  - Repository URL: Paste the git reposition of that Repo here
+  - Branch: Repo of the branch is [here](https://github.com/cvamsikrishna11/Jenkins-CI-CD-Pipeline-Project.git)
+  - Branch: main (*/main)
+  - Script path: Jenkinsfile
+  - Click on "**Save**
+  - Then go click now on "**Build Now**" to test.
+  - Script: Under "Try sample Pipeline", use the drop down to select for "**Hello world**"
+  - See the sample script
+- Clock now on "**Apply**" and "**Save**"
+
+
+
+
+
+
+
+
+
+
 o	Click now on apply and save
 o	Click again now on “build now” to invoke the build.
 You will see the sample pipeline succeed
