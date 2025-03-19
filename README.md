@@ -79,7 +79,7 @@ under the box of user data,
    - **S3.tf**
    - **Jenkinsfile**
 Go to this repo and copy the content of this files, then you come and paste them under their respective files here. Repo is 
-[here](https://github.com/kenneth-lekeanyi/airbub-infrastructure-jenkins-pipeline-infratsructure)
+[here](https://github.com/Kenneth-lekeanyi/airbnb-infrastructure-Jenkins-pipeline-infrastructure-.git)
 If you are using a different region, you should edit the region in **provider.tf** to the region that you are using. Also change the Ami. {so Go to the region you are using and grap an ami and bring it here}, Otherwise it will fail.
 -	Test it by running
   - terraform unit(successful)
