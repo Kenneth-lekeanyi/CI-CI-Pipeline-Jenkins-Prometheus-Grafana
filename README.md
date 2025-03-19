@@ -143,7 +143,7 @@ Now, go run the Build to see if the terraform init stage of the pipeline will go
 - 
 -	now click on “**configure**”.
 - In the pipeline, insert this short code this is the pipeline script to call terraform.
-    - ![Image](https://github.com/user-attachments/assets/f279b12f-1fef-422e-9f43-8b0e8b63acce) {This stage "Declarative tool" install will come up automatically when we inject the tool in the code. You can use this system to install Java, maven etc}
+[image]![Image](https://github.com/user-attachments/assets/f279b12f-1fef-422e-9f43-8b0e8b63acce) {This stage "Declarative tool" install will come up automatically when we inject the tool in the code. You can use this system to install Java, maven etc}
 
 -	now click on "**Apply**" and "**save**"
 - now run the **build now**, you will see that the terraform init stage will succeed since we have used the script to install terraform. Now our terraform project is configured.
