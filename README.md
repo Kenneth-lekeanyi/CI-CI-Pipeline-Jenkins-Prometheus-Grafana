@@ -118,7 +118,7 @@ o	In the Jenkins UI click on “**new item**”
 -	Now click on “**build now**”
 you will see a stage view as a sample pipeline and it logs.
 
-# let's install terraform plugins and install terraform itself directly using Jenkins without installing it manually in the O.S
+# (B) let's install terraform plugins and install terraform itself directly using Jenkins without installing it manually in the O.S
 -	so go to Jenkins dashboard let's first install the terraform plugins
 -	click on "**manage Jenkins**”
 -	now click on "**manage plugins**”
@@ -212,38 +212,48 @@ Now the infrastructure pipeline is complete and successful. But we Need to see t
 - it fails because of these:
 1)	Insert monitoring in the ***EC2 instance.tf*** to fix the monitoring issue
 2)	Also it complained that we optimize **EBS**. So also insect EBS optimized in your **EC2 instance.tf** as well
-3)	Ensure EBS values is encrypt as well to fix it further
+3)	Ensure EBS values is encrypted as well to fix it further
    
-Now change your directory by getting into the Airbnb-infra. So do 
-   Cd Airbnb-infrastructure “enter”
--	Now run the git commands to add it. So do git add.
-Git command-m “scan fix for Best practices”
-Git push
--	Now go to Jenkins and click on “build now”again.
-It fails again
-So to fix it we can skip it since it is not a major thing.
-Insert the skip-check according to the recommendtions of the logs.
-Note; the skip—check CKV-AWS=79 that you see in the script will differ from your own scenario.So the checker will display done logs,follow It to get your own –skip.check. some person will have 2 things to skip and in that may ,it will be.
-Checker-d.---skip-check CKV-AWS-79,space CKV2-AWS-41
--	Now click on “Apply” and click on “save”
--	Then you click on “Build Now”
-So the infrastructure pipeline is complete. Once we push ang changes or New code to our Gitbnb ourbnb-infrastructure Repo, that infrastructure will automatically get deployed in our AWS account.
-*Now go to the terminal and get into this directory.
-Cd/var/lib/Jenkins/workspace/Airbnb-infra-deployment-pipeline
-*Now do LS you will see now the files.
-*Now,do destroy
-Sudo terraform destroy if you want to destroy it the infrastructure that is just created. ( we could automate it in the pipeline and comment it).
-It fail. Reason is because we install terraform via Jenkins. Terraform is not installed in the O.S.
-So we can destroy it only in the terraform script so you can go to the sript and change the apply to destroy like this.
-Sh terraform destroy—auto-approve
--	Then click on “save” and “apply”
--	Then go to Jenkins and click on “build now”
--	Go to the instsnces and reload to see that the created instance is destroy.
-Now our infrastructure is done. We shall now proceed to the Jenkins. Application deployment.
-Wherein we can deploy a terraform code in the pipeline authomatically provision the resources in thr console via a pipeline.
-(C)	The application deployment pipeline. Now, we are going into the application deployment pipeline after completing the infrastructure deploymenr pipeline. So, we shall take the application ode and deploy it ontop of servers once all the stages are. Completed. This will automaticslly deploy a simple Javo application.
-Lets first of all setup the Codebase.
--	Get this Repo into your local and to your Remote. This is the Java application project that we are using (for windows, change the terminal to bash) For waves it is o.ic no need to change Repository is here.
+- Now change your directory by getting into the Airbnb-infra. So do 
+`Cd Airbnb-infrastructure`
+-	Now run the git commands to add it. So do
+  - `git add .`
+  - `git commit -m “scan fix for Best practices”`
+  - `git push`
+  - 
+-	Now go to Jenkins and click on “**build now**” again.
+- It fails again
+- 
+- So to fix it we can skip it since it is not a major thing.
+- Insert the skip-check according to the recommendtions of the logs.
+- 
+- { **Note**; the --skip—check CKV_AWS=79 that you see in the script will differ from your own scenario. So the checkov will display some logs, follow It to get your own --skip_check. some person will have 2 things to skip and in that way ,it will be.
+***Checkov-d . --skip-check CKV_AWS-79, CKV2_AWS_41***}
+-	Now click on “**Apply**” and click on “**save**”
+-	Then you click on “**Build Now**”
+-	{Note: The statefile will be stored in S3 Remote Backend}
+- So the infrastructure pipeline is complete. Once we push any changes or New code to our Github airbnb-infrastructure Repo, that infrastructure will automatically get deployed in our AWS account.
+-
+- Now go to the terminal and get into this directory.
+`cd /var/lib/Jenkins/workspace/airbnb-infra-deployment-pipeline`
+- Now do `ls` you will see now the files.
+- Now,do destroy
+`sudo terraform destroy` {if you want to destroy the infrastructure that is just created, ( we could automate it in the pipeline and comment it)}.
+- It fails: {Reason is because we install terraform via Jenkins. Terraform is not installed in the O.S.
+- So we can destroy it only in the terraform script. so you can go to the script and change the apply to destroy like this.
+`sh terraform destroy --auto-approve`
+-	Then click on “**save**” and “**apply**”
+-	Then go to Jenkins and click on “**build now**”
+-	Go to the instsnces and reload to see that the created instance is destroyed.
+- Now our infrastructure is done. We shall now proceed to the Jenkins. Application deployment.
+- ***Wherein we can deploy a terraform code in the pipeline to authomatically provision the resources in the console via the pipeline.***
+
+- 
+# (C)	The Application Deployment Pipeline. 
+-
+- ***Now, we are going into the Application Deployment Pipeline after completing the infrastructure deploymenr pipeline. So, we shall take the application code and deploy it ontop of servers once all the stages are Completed. This will automaticslly deploy a simple Javo application.***
+- Lets first of all setup the Codebase.
+-	Get this Repo into your local and to your Remote. This is the Java application project that we are using. (for windows, change the terminal to bash) For macOs, it is o.k. No need to change anything. The Repository is here.
 https://github.com/kenneth-lekeanyi/-eagles-batch-devops-project-cicd-jenkins-pipeline-with-prometheus-and-Grafana
 -	Clone the repository to your local and 
 -	Push it to your company Remote Repo 
