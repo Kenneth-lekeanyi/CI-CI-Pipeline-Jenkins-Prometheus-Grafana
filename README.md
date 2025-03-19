@@ -297,7 +297,9 @@ Repository URL: Past the git Repo URL of the App repo here. The git repo of this
 -	Click now on “**Generate pipeline script**”
 - Now copy the line of code that pop up in box and take it to the sample script and paste it inside the step of git checkout.
 - So it appears like this: link to this Jenkinsfile script is [here](https://github.com/cvamsikrishna11/Jenkins-CI-CD-Pipeline-Project.git)
-- use this manuscript ![Image](https://github.com/user-attachments/assets/2633079a-d982-4edb-bc8c-20fa1b18ec85) to build the pipeline
+- use this manuscript
+- ![Image](https://github.com/user-attachments/assets/2633079a-d982-4edb-bc8c-20fa1b18ec85)
+- to build the pipeline
 
 set upSonarQube
 to set up sonarqube, access the EC2 console then click on “launch instance”
