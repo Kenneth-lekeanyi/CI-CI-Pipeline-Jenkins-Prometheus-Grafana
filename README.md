@@ -279,30 +279,19 @@ So,
   - Repository URL: Paste the git reposition of that Repo here
   - Branch: Repo of the branch is [here](https://github.com/cvamsikrishna11/Jenkins-CI-CD-Pipeline-Project.git)
   - Branch: main (*/main)
-  - Script path: Jenkinsfile
+  - Script path: **Jenkinsfile**
   - Click on "**Save**
   - Then go click now on "**Build Now**" to test.
   - Script: Under "Try sample Pipeline", use the drop down to select for "**Hello world**"
   - See the sample script
-- Clock now on "**Apply**" and "**Save**"
-
-
-
-
-
-
-
-
-
-
-o	Click now on apply and save
-o	Click again now on “build now” to invoke the build.
-You will see the sample pipeline succeed
-*if you want to edit your pipeline, you click on “configure” at the left and scroll down to the script and
-*now, directly under it, click on “pipeline syntax” to open it on a new page.
-- In the sample step box on the page that comes up, click inside to searcg for “git” our intension is to search for git clone.
-- scroll down o locate and click on “git: Git”
-Repository URL: Push the Repo URL of the App repo here.
+- Click now on "**Apply**" and "**Save**"
+- Click again now on “**build now**” to invoke the build. {You will see the sample pipeline succeed}
+* if you want to edit your pipeline, you click on “**configure**” at the left and scroll down to the script and
+* Now, directly under it, click on “**pipeline syntax**” to open it on a new page.
+- In the {sample step} box on the page that comes up, click inside to search for “git”. Our intension is to search for git clone.
+- scroll down to locate and click on “**git: Git**”
+- 
+Repository URL: Past the git Repo URL of the App repo here.
 http://github.com/kenneth-lekeanyi/eagles-batch-devops-projects-cicd-jenkins-pipeline-with-promethere-and-creferner.git
 -	Branch:main
 -	Since it is a public Repo, we don’t need to add any credentials
