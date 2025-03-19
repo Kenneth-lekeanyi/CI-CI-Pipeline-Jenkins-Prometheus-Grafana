@@ -292,13 +292,12 @@ So,
 - scroll down to locate and click on “**git: Git**”
 - 
 Repository URL: Past the git Repo URL of the App repo here. The git repo of this Application in this demo is [here](https://github.com/Kenneth-lekeanyi/CI-CI-Pipeline-Jenkins-Prometheus-Grafana.git)
-
--	Branch:main
+-	Branch: **main**
 -	Since it is a public Repo, we don’t need to add any credentials
--	Click now as “Generate pipeline script”
-Now copy the line of code that pop up in box and take it to the sample script and paste it inside the step of cut cludcont.
-So it appears like this: link to the script
-https://github.com/cvamsikrishnall/jenkins-CI-CD-Pipeline-project//blob/main/Jenkinsfile
+-	Click now on “**Generate pipeline script**”
+- Now copy the line of code that pop up in box and take it to the sample script and paste it inside the step of git checkout.
+- So it appears like this: link to this Jenkinsfile script is [here](https://github.com/cvamsikrishna11/Jenkins-CI-CD-Pipeline-Project.git)
+
 set upSonarQube
 to set up sonarqube, access the EC2 console then click on “launch instance”
 Name: sonarqube-server
