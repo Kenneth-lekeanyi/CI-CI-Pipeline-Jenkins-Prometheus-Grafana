@@ -291,8 +291,8 @@ So,
 - In the {sample step} box on the page that comes up, click inside to search for “git”. Our intension is to search for git clone.
 - scroll down to locate and click on “**git: Git**”
 - 
-Repository URL: Past the git Repo URL of the App repo here.
-http://github.com/kenneth-lekeanyi/eagles-batch-devops-projects-cicd-jenkins-pipeline-with-promethere-and-creferner.git
+Repository URL: Past the git Repo URL of the App repo here. The git repo of this Application in this demo is [here](https://github.com/Kenneth-lekeanyi/CI-CI-Pipeline-Jenkins-Prometheus-Grafana.git)
+
 -	Branch:main
 -	Since it is a public Repo, we don’t need to add any credentials
 -	Click now as “Generate pipeline script”
