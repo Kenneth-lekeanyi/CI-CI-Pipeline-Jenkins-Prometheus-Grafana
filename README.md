@@ -253,8 +253,8 @@ Now the infrastructure pipeline is complete and successful. But we Need to see t
 -
 - ***Now, we are going into the Application Deployment Pipeline after completing the infrastructure deploymenr pipeline. So, we shall take the application code and deploy it ontop of servers once all the stages are Completed. This will automaticslly deploy a simple Javo application.***
 - Lets first of all setup the Codebase.
--	Get this Repo into your local and to your Remote. This is the Java application project that we are using. (for windows, change the terminal to bash) For macOs, it is o.k. No need to change anything. The Repository is here.
-https://github.com/kenneth-lekeanyi/-eagles-batch-devops-project-cicd-jenkins-pipeline-with-prometheus-and-Grafana
+-	Get this Repo into your local and to your Remote. This is the Java application project that we are using. (for windows, change the terminal to bash) For macOs, it is o.k. No need to change anything. The Repository is [here](https://github.com/Kenneth-lekeanyi/CI-CI-Pipeline-Jenkins-Prometheus-Grafana.git)
+-	
 -	Clone the repository to your local and 
 -	Push it to your company Remote Repo 
 -	Now go to the Jenkins UI. 
